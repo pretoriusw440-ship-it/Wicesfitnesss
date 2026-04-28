@@ -1,0 +1,448 @@
+export default function GymCoachingWebsite() {
+  return (
+    <div className="min-h-screen bg-black text-white">
+      {/* HERO */}
+      <header className="py-16 px-6 text-center bg-gradient-to-b from-black to-gray-900">
+        <h1 className="text-5xl font-bold">Elite Online Fitness Coaching</h1>
+        <p className="mt-4 text-lg text-gray-300">
+          Build muscle. Lose fat. Transform your lifestyle.
+        </p>
+        <p className="mt-2 text-sm text-gray-400">
+          4鈥�5 years experience in the fitness industry
+        </p>
+      </header>
+
+      {/* LIMITED SPOTS */}
+      <section className="bg-red-600 text-center py-4 font-semibold">
+        Limited coaching spots available this month 鈥� secure yours now
+      </section>
+
+      {/* ABOUT */}
+      <section className="grid md:grid-cols-2 gap-10 p-10 max-w-6xl mx-auto items-center">
+        <div>
+          <h2 className="text-3xl font-bold mb-4">Train With Purpose</h2>
+          <p className="text-gray-300 leading-7">
+            I create personalised training programs, nutrition guidance, and full support via WhatsApp.
+            Every plan is designed around your body and your goals.
+          </p>
+          <p className="mt-4 font-semibold">WhatsApp: 067 766 0032</p>
+        </div>
+        <div className="border border-gray-700 rounded-2xl p-10 text-center text-gray-400">
+          Add your transformation photo here
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="bg-gray-900 py-12 px-6">
+        <h2 className="text-3xl font-bold text-center mb-10">Coaching Plans</h2>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {/* ONLINE */}
+          <div className="border border-gray-700 rounded-2xl p-6">
+            <h3 className="text-2xl font-bold">Online Coaching</h3>
+            <p className="text-3xl font-bold mt-3">R200 / month</p>
+            <ul className="mt-4 space-y-2 text-gray-300">
+              <li>Custom workout program</li>
+              <li>Nutrition guidance</li>
+              <li>Exercise explanations</li>
+              <li>WhatsApp support</li>
+            </ul>
+
+            <div className="mt-6 border border-gray-700 p-4 rounded-xl text-sm">
+              <p className="font-semibold">Banking Details</p>
+              <p>Capitec Savings</p>
+              <p>MR WR Pretorius</p>
+              <p>Acc: 1815541685</p>
+              <p>Reference: Your Name</p>
+              <p className="mt-2">Proof of payment:</p>
+              <p>Pretoriusw440@gmail.com</p>
+            </div>
+          </div>
+
+          {/* PERSONAL */}
+          <div className="border border-gray-700 rounded-2xl p-6">
+            <h3 className="text-2xl font-bold">Private Personal Training</h3>
+            <p className="text-3xl font-bold mt-3">R500 / month</p>
+            <ul className="mt-4 space-y-2 text-gray-300">
+              <li>1-on-1 training sessions</li>
+              <li>Full coaching attention</li>
+              <li>Form correction</li>
+              <li>Faster results</li>
+            </ul>
+
+            <div className="mt-6 border border-gray-700 p-4 rounded-xl text-sm">
+              <p className="font-semibold">Banking Details</p>
+              <p>Capitec Savings</p>
+              <p>MR WR Pretorius</p>
+              <p>Acc: 1815541685</p>
+              <p>Reference: Your Name</p>
+              <p className="mt-2">Proof of payment:</p>
+              <p>Pretoriusw440@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BOOKING SYSTEM (simple) */}
+      <section className="py-12 px-6 max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-4">Book a Session</h2>
+        <p className="text-gray-300 mb-6">
+          DM me on WhatsApp to schedule your training session or consultation.
+        </p>
+        <a
+          href="https://wa.me/27677660032"
+          className="bg-red-600 px-6 py-3 rounded-xl font-semibold"
+        >
+          Book via WhatsApp
+        </a>
+      </section>
+
+      {/* INSTAGRAM */}
+      <section className="bg-gray-900 py-12 px-6 text-center">
+        <h2 className="text-3xl font-bold mb-4">Follow My Progress</h2>
+        <p className="text-gray-300 mb-4">Instagram fitness updates & client results</p>
+        <a
+          href="https://instagram.com"
+          className="text-red-400 underline"
+        >
+          Open Instagram Page
+        </a>
+      </section>
+
+      {/* CLIENT LOGIN (placeholder system) */}
+      <section className="py-12 px-6 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-6">Client Progress Tracker</h2>
+        <div className="border border-gray-700 p-6 rounded-2xl text-center">
+          <p className="text-gray-300 mb-4">
+            Login system coming soon 鈥� clients will track workouts & progress here.
+          </p>
+          <input
+            className="w-full p-3 rounded-xl text-black mb-3"
+            placeholder="Username"
+          />
+          <input
+            className="w-full p-3 rounded-xl text-black mb-3"
+            placeholder="Password"
+            type="password"
+          />
+          <button className="bg-red-600 w-full py-3 rounded-xl font-semibold">
+            Login
+          </button>
+        </div>
+      </section>
+
+      {/* TRANSFORMATION */}
+      <section className="bg-gray-900 py-12 px-6">
+        <h2 className="text-3xl font-bold text-center mb-8">Transformations</h2>
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="border border-gray-700 rounded-2xl p-10 text-center text-gray-400">Before Photo</div>
+          <div className="border border-gray-700 rounded-2xl p-10 text-center text-gray-400">After Photo</div>
+          <div className="border border-gray-700 rounded-2xl p-10 text-center text-gray-400">Coach Physique</div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <footer className="bg-black text-center py-10">
+        <p className="text-lg">Ready to transform your body?</p>
+        <p className="text-gray-400 mt-2">WhatsApp: 067 766 0032</p>
+      </footer>
+    </div>
+  );export default function GymCoachingWebsite() {
+  return (
+    <div className="min-h-screen bg-black text-white">
+      {/* HERO */}
+      <header className="py-16 px-6 text-center bg-gradient-to-b from-black to-gray-900">
+        <h1 className="text-5xl font-bold">Elite Online Fitness Coaching</h1>
+        <p className="mt-4 text-lg text-gray-300">
+          Build muscle. Lose fat. Transform your lifestyle.
+        </p>
+        <p className="mt-2 text-sm text-gray-400">
+          4鈥�5 years experience in the fitness industry
+        </p>
+      </header>
+
+      {/* LIMITED SPOTS */}
+      <section className="bg-red-600 text-center py-4 font-semibold">
+        Limited coaching spots available this month 鈥� secure yours now
+      </section>
+
+      {/* ABOUT */}
+      <section className="grid md:grid-cols-2 gap-10 p-10 max-w-6xl mx-auto items-center">
+        <div>
+          <h2 className="text-3xl font-bold mb-4">Train With Purpose</h2>
+          <p className="text-gray-300 leading-7">
+            I create personalised training programs, nutrition guidance, and full support via WhatsApp.
+            Every plan is designed around your body and your goals.
+          </p>
+          <p className="mt-4 font-semibold">WhatsApp: 067 766 0032</p>
+        </div>
+        <div className="border border-gray-700 rounded-2xl p-10 text-center text-gray-400">
+          Add your transformation photo here
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="bg-gray-900 py-12 px-6">
+        <h2 className="text-3xl font-bold text-center mb-10">Coaching Plans</h2>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {/* ONLINE */}
+          <div className="border border-gray-700 rounded-2xl p-6">
+            <h3 className="text-2xl font-bold">Online Coaching</h3>
+            <p className="text-3xl font-bold mt-3">R200 / month</p>
+            <ul className="mt-4 space-y-2 text-gray-300">
+              <li>Custom workout program</li>
+              <li>Nutrition guidance</li>
+              <li>Exercise explanations</li>
+              <li>WhatsApp support</li>
+            </ul>
+
+            <div className="mt-6 border border-gray-700 p-4 rounded-xl text-sm">
+              <p className="font-semibold">Banking Details</p>
+              <p>Capitec Savings</p>
+              <p>MR WR Pretorius</p>
+              <p>Acc: 1815541685</p>
+              <p>Reference: Your Name</p>
+              <p className="mt-2">Proof of payment:</p>
+              <p>Pretoriusw440@gmail.com</p>
+            </div>
+          </div>
+
+          {/* PERSONAL */}
+          <div className="border border-gray-700 rounded-2xl p-6">
+            <h3 className="text-2xl font-bold">Private Personal Training</h3>
+            <p className="text-3xl font-bold mt-3">R500 / month</p>
+            <ul className="mt-4 space-y-2 text-gray-300">
+              <li>1-on-1 training sessions</li>
+              <li>Full coaching attention</li>
+              <li>Form correction</li>
+              <li>Faster results</li>
+            </ul>
+
+            <div className="mt-6 border border-gray-700 p-4 rounded-xl text-sm">
+              <p className="font-semibold">Banking Details</p>
+              <p>Capitec Savings</p>
+              <p>MR WR Pretorius</p>
+              <p>Acc: 1815541685</p>
+              <p>Reference: Your Name</p>
+              <p className="mt-2">Proof of payment:</p>
+              <p>Pretoriusw440@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BOOKING SYSTEM (simple) */}
+      <section className="py-12 px-6 max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-4">Book a Session</h2>
+        <p className="text-gray-300 mb-6">
+          DM me on WhatsApp to schedule your training session or consultation.
+        </p>
+        <a
+          href="https://wa.me/27677660032"
+          className="bg-red-600 px-6 py-3 rounded-xl font-semibold"
+        >
+          Book via WhatsApp
+        </a>
+      </section>
+
+      {/* INSTAGRAM */}
+      <section className="bg-gray-900 py-12 px-6 text-center">
+        <h2 className="text-3xl font-bold mb-4">Follow My Progress</h2>
+        <p className="text-gray-300 mb-4">Instagram fitness updates & client results</p>
+        <a
+          href="https://instagram.com"
+          className="text-red-400 underline"
+        >
+          Open Instagram Page
+        </a>
+      </section>
+
+      {/* CLIENT LOGIN (placeholder system) */}
+      <section className="py-12 px-6 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-6">Client Progress Tracker</h2>
+        <div className="border border-gray-700 p-6 rounded-2xl text-center">
+          <p className="text-gray-300 mb-4">
+            Login system coming soon 鈥� clients will track workouts & progress here.
+          </p>
+          <input
+            className="w-full p-3 rounded-xl text-black mb-3"
+            placeholder="Username"
+          />
+          <input
+            className="w-full p-3 rounded-xl text-black mb-3"
+            placeholder="Password"
+            type="password"
+          />
+          <button className="bg-red-600 w-full py-3 rounded-xl font-semibold">
+            Login
+          </button>
+        </div>
+      </section>
+
+      {/* TRANSFORMATION */}
+      <section className="bg-gray-900 py-12 px-6">
+  export default function GymCoachingWebsite() {
+  return (
+    <div className="min-h-screen bg-black text-white">
+      {/* HERO */}
+      <header className="py-16 px-6 text-center bg-gradient-to-b from-black to-gray-900">
+        <h1 className="text-5xl font-bold">Elite Online Fitness Coaching</h1>
+        <p className="mt-4 text-lg text-gray-300">
+          Build muscle. Lose fat. Transform your lifestyle.
+        </p>
+        <p className="mt-2 text-sm text-gray-400">
+          4鈥�5 years experience in the fitness industry
+        </p>
+      </header>
+
+      {/* LIMITED SPOTS */}
+      <section className="bg-red-600 text-center py-4 font-semibold">
+        Limited coaching spots available this month 鈥� secure yours now
+      </section>
+
+      {/* ABOUT */}
+      <section className="grid md:grid-cols-2 gap-10 p-10 max-w-6xl mx-auto items-center">
+        <div>
+          <h2 className="text-3xl font-bold mb-4">Train With Purpose</h2>
+          <p className="text-gray-300 leading-7">
+            I create personalised training programs, nutrition guidance, and full support via WhatsApp.
+            Every plan is designed around your body and your goals.
+          </p>
+          <p className="mt-4 font-semibold">WhatsApp: 067 766 0032</p>
+        </div>
+        <div className="border border-gray-700 rounded-2xl p-10 text-center text-gray-400">
+          Add your transformation photo here
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="bg-gray-900 py-12 px-6">
+        <h2 className="text-3xl font-bold text-center mb-10">Coaching Plans</h2>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {/* ONLINE */}
+          <div className="border border-gray-700 rounded-2xl p-6">
+            <h3 className="text-2xl font-bold">Online Coaching</h3>
+            <p className="text-3xl font-bold mt-3">R200 / month</p>
+            <ul className="mt-4 space-y-2 text-gray-300">
+              <li>Custom workout program</li>
+              <li>Nutrition guidance</li>
+              <li>Exercise explanations</li>
+              <li>WhatsApp support</li>
+            </ul>
+
+            <div className="mt-6 border border-gray-700 p-4 rounded-xl text-sm">
+              <p className="font-semibold">Banking Details</p>
+              <p>Capitec Savings</p>
+              <p>MR WR Pretorius</p>
+              <p>Acc: 1815541685</p>
+              <p>Reference: Your Name</p>
+              <p className="mt-2">Proof of payment:</p>
+              <p>Pretoriusw440@gmail.com</p>
+            </div>
+          </div>
+
+          {/* PERSONAL */}
+          <div className="border border-gray-700 rounded-2xl p-6">
+            <h3 className="text-2xl font-bold">Private Personal Training</h3>
+            <p className="text-3xl font-bold mt-3">R500 / month</p>
+            <ul className="mt-4 space-y-2 text-gray-300">
+              <li>1-on-1 training sessions</li>
+              <li>Full coaching attention</li>
+              <li>Form correction</li>
+              <li>Faster results</li>
+            </ul>
+
+            <div className="mt-6 border border-gray-700 p-4 rounded-xl text-sm">
+              <p className="font-semibold">Banking Details</p>
+              <p>Capitec Savings</p>
+              <p>MR WR Pretorius</p>
+              <p>Acc: 1815541685</p>
+              <p>Reference: Your Name</p>
+              <p className="mt-2">Proof of payment:</p>
+              <p>Pretoriusw440@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BOOKING SYSTEM (simple) */}
+      <section className="py-12 px-6 max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-4">Book a Session</h2>
+        <p className="text-gray-300 mb-6">
+          DM me on WhatsApp to schedule your training session or consultation.
+        </p>
+        <a
+          href="https://wa.me/27677660032"
+          className="bg-red-600 px-6 py-3 rounded-xl font-semibold"
+        >
+          Book via WhatsApp
+        </a>
+      </section>
+
+      {/* INSTAGRAM */}
+      <section className="bg-gray-900 py-12 px-6 text-center">
+        <h2 className="text-3xl font-bold mb-4">Follow My Progress</h2>
+        <p className="text-gray-300 mb-4">Instagram fitness updates & client results</p>
+        <a
+          href="https://instagram.com"
+          className="text-red-400 underline"
+        >
+          Open Instagram Page
+        </a>
+      </section>
+
+      {/* CLIENT LOGIN (placeholder system) */}
+      <section className="py-12 px-6 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-6">Client Progress Tracker</h2>
+        <div className="border border-gray-700 p-6 rounded-2xl text-center">
+          <p className="text-gray-300 mb-4">
+            Login system coming soon 鈥� clients will track workouts & progress here.
+          </p>
+          <input
+            className="w-full p-3 rounded-xl text-black mb-3"
+            placeholder="Username"
+          />
+          <input
+            className="w-full p-3 rounded-xl text-black mb-3"
+            placeholder="Password"
+            type="password"
+          />
+          <button className="bg-red-600 w-full py-3 rounded-xl font-semibold">
+            Login
+          </button>
+        </div>
+      </section>
+
+      {/* TRANSFORMATION */}
+      <section className="bg-gray-900 py-12 px-6">
+        <h2 className="text-3xl font-bold text-center mb-8">Transformations</h2>
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="border border-gray-700 rounded-2xl p-10 text-center text-gray-400">Before Photo</div>
+          <div className="border border-gray-700 rounded-2xl p-10 text-center text-gray-400">After Photo</div>
+          <div className="border border-gray-700 rounded-2xl p-10 text-center text-gray-400">Coach Physique</div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <footer className="bg-black text-center py-10">
+        <p className="text-lg">Ready to transform your body?</p>
+        <p className="text-gray-400 mt-2">WhatsApp: 067 766 0032</p>
+      </footer>
+    </div>
+  );      <h2 className="text-3xl font-bold text-center mb-8">Transformations</h2>
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="border border-gray-700 rounded-2xl p-10 text-center text-gray-400">Before Photo</div>
+          <div className="border border-gray-700 rounded-2xl p-10 text-center text-gray-400">After Photo</div>
+          <div className="border border-gray-700 rounded-2xl p-10 text-center text-gray-400">Coach Physique</div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <footer className="bg-black text-center py-10">
+        <p className="text-lg">Ready to transform your body?</p>
+        <p className="text-gray-400 mt-2">WhatsApp: 067 766 0032</p>
+      </footer>
+    </div>
+  );
